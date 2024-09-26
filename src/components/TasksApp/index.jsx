@@ -6,7 +6,7 @@ import { Button } from "./styles"
 import { Text } from "./styles"
 import { Title } from "./styles"
 import { ListBox } from "./styles"
-import MessageItem from "../MessageItem/index.jsx"
+import TaskItem from "../TaskItem/index.jsx"
 import MyGlobalStyles from "../../styles/globalStyles"
 import Chatting from '../../assets/chatting.svg'
 function Tasks(){
@@ -35,7 +35,7 @@ function Tasks(){
             <ListBox>
                 <ul>
                     {textInputAllContent.map((content) => 
-                        <MessageItem message={content}/>
+                        <TaskItem content={content}></TaskItem>
                     )}
                 </ul>
             </ListBox>

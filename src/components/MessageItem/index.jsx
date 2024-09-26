@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import './index.css';
+import { useState, useEffect } from 'react';
+import { MessageLi } from './styles';
+import { MessageItem } from './styles';
+import { Timestamp } from './styles';
 
-const MessageItem = ({ message }) => {
+const Message = ({ message }) => {
   const [timestamp, setTimestamp] = useState('');
 
   useEffect(() => {
-    const now = new Date().toLocaleString();
+    const now = new Date().toDateString
+    ();
     setTimestamp(now);
   }, []);
 
   return (
-    <li className="message-item">
-      <p>{message}</p>
-      <span className="timestamp">{timestamp}</span>
-    </li>
+    <MessageLi>
+      <MessageItem>{message}</MessageItem>
+      <Timestamp>{timestamp}</Timestamp>
+    </MessageLi>
   );
 };
 
-export default MessageItem;
+export default Message;

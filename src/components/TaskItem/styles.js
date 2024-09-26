@@ -1,37 +1,27 @@
-.message-item {
+import styled from 'styled-components'
+
+export const TaskStructure = styled.div `
     width: 342px;
     height: auto;
     top: 555px;
     left: 36px;
-    gap: 0px;
-    opacity: 0px;
     background: #FFFFFF24;
-    margin-top: 19px;
+    margin-top: 10px;
     font-family: system-ui;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 2.5px;
     text-align: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
     list-style-type: none;
     color: #FFFFFF;
     word-wrap: break-word;
     word-break: break-word;
     line-height: 1.5;
     white-space: pre-wrap;
-  }
-  
-  .message-item p {
-    margin: 0;
-  }
-  
-  .timestamp {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.85em;
-    color: #bbe7ff;
-    text-align: right;
-  }
-  
+    border: 1px ridge gray;
+    border-radius: 0.5em;
+    display:flex;
+`

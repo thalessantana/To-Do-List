@@ -41,6 +41,7 @@ export const Text = styled.text`
     font-weight: 500;
     line-height: 2.5px;
     text-align: center;
+    padding-left: 4px;
 `
 export const Container = styled.div`
     width: 414px;
